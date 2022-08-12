@@ -98,5 +98,22 @@ generateBtn.addEventListener("click", function() {
     else if (specialCharacters) {
       option = character;
     }
+    password = [];
+
+    for (var i = 0; i < enter; i++) {
+      var pickOptions = option[Math.floor(Math.random() * option.length)];
+      JSON.stringify(pickOptions);
+      password.push(pickOptions);
+    }
+    var ps = password.join("");
+    UserInput(ps);
+    return ps;
+  };
+
+  function UserInput(ps) {
+    document.getElementById('password').textContent = ps;
   }
+
+  ps = generatePassword();
+  document.getElementById('password').placeholder = ps;
 });
