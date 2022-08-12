@@ -1,6 +1,6 @@
 # Generate-password
 
-Link: 
+Link: https://alexisr3099.github.io/Generate-password/
 
 ## Pressing the 'generate password' button will:
  - Ask the user what criteria is allowed for their unique password, which includes: (lowercase, uppercase, numbers, and/or special characters)
